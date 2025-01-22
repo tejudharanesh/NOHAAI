@@ -72,7 +72,6 @@ function SignUp({ setAuthUser }) {
     } catch (err) {
       console.error("Sign up error:", err);
 
-      // Extract and display server-side error message
       if (err.response && err.response.data && err.response.data.error) {
         setError(err.response.data.error);
       } else {

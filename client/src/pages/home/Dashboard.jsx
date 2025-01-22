@@ -33,7 +33,6 @@ function Dashboard({ user }) {
       setJitsiLink("");
     }
 
-    // Toggle meeting status
     setIsMeetingActive(!isMeetingActive);
   };
 

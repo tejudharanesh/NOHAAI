@@ -51,7 +51,7 @@ function LoginPage({ setAuthUser }) {
       );
 
       if (response.status === 200) {
-        const data = response.data; // Use consistent casing for variables
+        const data = response.data;
         console.log("Login successful:", data);
 
         const userData = {
@@ -59,13 +59,12 @@ function LoginPage({ setAuthUser }) {
           email: data.email,
         };
 
-        setAuthUser(userData); // Store user information in state/context
-        navigate("/"); // Navigate to the home page or dashboard
+        setAuthUser(userData);
+        navigate("/");
       }
     } catch (err) {
       console.error("Login error:", err);
 
-      // Display the backend error if available, otherwise fallback to a generic error
       if (err.response && err.response.data && err.response.data.error) {
         setError(err.response.data.error);
       } else {
