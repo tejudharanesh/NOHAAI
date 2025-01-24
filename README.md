@@ -1,22 +1,19 @@
-MERN stack is the idea of using Javascript/Node for fullstack web development.
 
-clone or download
+clone or download the code
 
-$ git clone https://github.com/amazingandyyy/mern.git
-
-$ yarn # or npm i
+`npm i`
 
 run command in root
-npm run dev
+`npm run dev`
 this will start server
 
 
-cd client
-$ yarn # or npm i
+`cd client`
+`npm i`
 
 run this command for client
-npm run dev
-this will start server
+`npm run dev`
+this will start client
 
 
 add env files for both cliend and server
